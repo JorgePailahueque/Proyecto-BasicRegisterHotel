@@ -12,8 +12,9 @@ public class ZBasicRR {
         int single=5;
         int doble=5;
         int familiar=5;
-        String lista[][]=new String[totalPiezas-1][2];
+        String lista[][]=new String[totalPiezas][3];
         do{
+            System.out.println("usuario: \n.1 Administrador \n2. ");
             int op=leerN();
             boolean terminar=false;
             switch(op){
@@ -113,7 +114,7 @@ public class ZBasicRR {
                 }
                 
                     for (int k = 0; k <m.length; k++) {
-                        for (int l = 0; l < 2; l++) {
+                        for (int l = 0; l < 3; l++) {
                             System.out.print(m[k][l]+" ");
                         }
                         System.out.println("");
